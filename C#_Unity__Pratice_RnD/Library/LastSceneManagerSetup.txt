@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/RnD_Game_BubblePop/Scenes/RnD_BubblePop.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
