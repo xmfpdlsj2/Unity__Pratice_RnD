@@ -1,6 +1,7 @@
 using Palmmedia.ReportGenerator.Core.Reporting.Builders;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 
 public class Practice_ref_out : MonoBehaviour
@@ -19,6 +20,15 @@ public class Practice_ref_out : MonoBehaviour
         Debug.Log($"valueType [{number}]");
         ChangeNumger_ref(ref number);
         Debug.Log($"reference Type [{number}]");
+
+        Monster dragon = new Monster();
+        dragon.id = 100;
+        dragon.name = "Agryong";
+
+        ChangeClass(dragon);
+        Debug.Log($"junt class: {dragon.id}");
+        ChangeClass(dragon);
+        Debug.Log($"ref class: {dragon.id}");
     }
 
     private void ChangeNumger(int num)
@@ -32,11 +42,17 @@ public class Practice_ref_out : MonoBehaviour
 
     private void ChangeClass(Monster monster)
     {
+        monster.id = 200;
 
+        monster = new Monster();
+        monster.id = 300;
     }
     private void ChangeClass_ref(ref Monster monster)
     {
+        monster.id = 200;
 
+        monster = new Monster();
+        monster.id = 300;
     }
 }
 
