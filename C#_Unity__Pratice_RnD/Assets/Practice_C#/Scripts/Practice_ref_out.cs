@@ -27,7 +27,7 @@ public class Practice_ref_out : MonoBehaviour
 
         ChangeClass(dragon);
         Debug.Log($"junt class: {dragon.id}");
-        ChangeClass(dragon);
+        ChangeClass_ref(ref dragon);
         Debug.Log($"ref class: {dragon.id}");
     }
 
