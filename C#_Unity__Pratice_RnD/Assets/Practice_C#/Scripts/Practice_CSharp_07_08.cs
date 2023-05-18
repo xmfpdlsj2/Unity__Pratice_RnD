@@ -1,10 +1,11 @@
 using Palmmedia.ReportGenerator.Core.Reporting.Builders;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
 
-public class Practice_ref_out : MonoBehaviour
+public class Practice_CSharp_07_08 : MonoBehaviour
 {
 
 
@@ -14,6 +15,25 @@ public class Practice_ref_out : MonoBehaviour
     }
 
     private void Main()
+    {
+        //RefnOut();
+
+        NullMerge((isNull) =>
+        {
+            Debug.Log($"Call back is: {isNull}");
+        });
+    }
+
+    private void NullMerge(Action<bool> callBack)
+    {
+        callBack?.Invoke(true);
+
+        List<string> list = new List<string>();
+
+        //list[0] ??= "";
+    }
+
+    private void RefnOut()
     {
         int number = 0;
         ChangeNumger(number);
@@ -30,7 +50,6 @@ public class Practice_ref_out : MonoBehaviour
         ChangeClass_ref(ref dragon);
         Debug.Log($"ref class: {dragon.id}");
     }
-
     private void ChangeNumger(int num)
     {
         num = 250;
