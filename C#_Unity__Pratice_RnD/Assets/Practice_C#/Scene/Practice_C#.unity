@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 351494027}
   - component: {fileID: 351494028}
   m_Layer: 0
-  m_Name: RefOutManager
+  m_Name: Practice_CSharp_07_08_Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
