@@ -73,6 +73,17 @@ public class Practice_CSharp_07_08 : MonoBehaviour
         monster = new Monster();
         monster.id = 300;
     }
+
+
+    // ¹«½ÃÀÚ _=
+    private void DiscardOperator()
+    {
+        var person = ("John", "Smith");
+        var (first, _) = person;
+
+        Debug.Log(first);
+        //Debug.Log(_); // error why?
+    }
 }
 
 public class Monster
