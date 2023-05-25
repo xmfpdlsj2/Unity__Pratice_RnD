@@ -22,6 +22,8 @@ public class Practice_CSharp_07_08 : MonoBehaviour
         {
             Debug.Log($"Call back is: {isNull}");
         });
+
+        SystemaRange();
     }
 
     private void NullMerge(Action<bool> callBack)
@@ -83,6 +85,25 @@ public class Practice_CSharp_07_08 : MonoBehaviour
 
         Debug.Log(first);
         //Debug.Log(_); // error why?
+    }
+
+    // System.Range
+    private void SystemaRange()
+    {
+        int[] table = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        int flexibleNum = UnityEngine.Random.Range(0, table.Length);
+
+        var table2 = table[..flexibleNum];
+        for (int i = 0; i < table2.Length; i++)
+        {
+            Debug.Log($"table2: [{table2[i]}]");
+        }
+
+        var table3 = table[2..^3];
+        for (int i = 0; i < table3.Length; i++)
+        {
+            Debug.Log($"table3: [{table3[i]}]");
+        }
     }
 }
 
