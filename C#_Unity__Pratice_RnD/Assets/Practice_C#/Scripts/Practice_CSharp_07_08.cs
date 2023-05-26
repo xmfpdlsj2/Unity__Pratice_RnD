@@ -105,6 +105,22 @@ public class Practice_CSharp_07_08 : MonoBehaviour
             Debug.Log($"table3: [{table3[i]}]");
         }
     }
+
+    // DoTween 딥한 예제들추가 공부
+    private void Dotween()
+    {
+        // Dotween.Sequence();
+        // Dotween.append;
+    }
+
+    // is or and etc
+    private void IsOrAndETC()
+    {
+        string ascii = "ASCII";
+        var ret = (ascii == "ASCII" || ascii == "BSCII");
+        ret = ascii is "ASCII" or "BSCII";
+
+    }
 }
 
 public class Monster
