@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
+using DG.Tweening;
 
 public class Practice_CSharp_07_08 : MonoBehaviour
 {
@@ -107,10 +108,19 @@ public class Practice_CSharp_07_08 : MonoBehaviour
     }
 
     // DoTween 딥한 예제들추가 공부
-    private void Dotween()
+    private void Dootween()
     {
-        // Dotween.Sequence();
-        // Dotween.append;
+        var dgSequence = DOTween.Sequence();
+        
+        //DOTween.Append();
+        //DOTween.AppendCallback();
+        //DOTween.AppendInterval();
+        //DOTween.Insert();
+        //DOTween.InsertCallback();
+        //DOTween.Join();
+        //DOTween.Prepend();
+        //DOTween.PrependCallback();
+        //DOTween.PrependInterval();
     }
 
     // is or and etc
