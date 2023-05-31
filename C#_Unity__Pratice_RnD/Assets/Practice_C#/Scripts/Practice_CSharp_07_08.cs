@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
 using DG.Tweening;
+using System.Runtime.InteropServices;
 
 public class Practice_CSharp_07_08 : MonoBehaviour
 {
@@ -121,6 +122,11 @@ public class Practice_CSharp_07_08 : MonoBehaviour
         //DOTween.Prepend();
         //DOTween.PrependCallback();
         //DOTween.PrependInterval();
+
+        //DOTween.OnUpdate();
+        //DOTween.OnStart();
+
+        // 연수님은 커스텀으로도 트윈을 만들어사용하기도했다. 상속받아서 사용가능한듯 
     }
 
     // is or and etc
@@ -130,6 +136,18 @@ public class Practice_CSharp_07_08 : MonoBehaviour
         var ret = (ascii == "ASCII" || ascii == "BSCII");
         ret = ascii is "ASCII" or "BSCII";
 
+    }
+
+    // &= 연산자
+    private bool GetBool()
+    {
+        bool answer = false;
+        int one = 1;
+        string some = "A";
+        answer &= one == 1;
+        answer &=  some != "B";
+        // .... 보기 좋은것 외에 어떤 이유로 쓰는지 좀더 정의할 필요가 있겠다.
+        return answer;
     }
 }
 
