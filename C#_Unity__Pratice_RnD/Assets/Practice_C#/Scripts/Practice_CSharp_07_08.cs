@@ -149,6 +149,8 @@ public class Practice_CSharp_07_08 : MonoBehaviour
         // .... 보기 좋은것 외에 어떤 이유로 쓰는지 좀더 정의할 필요가 있겠다.
         return answer;
     }
+
+    //for give me git... today is open diablo4 
 }
 
 public class Monster
