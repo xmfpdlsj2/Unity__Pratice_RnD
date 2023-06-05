@@ -150,7 +150,11 @@ public class Practice_CSharp_07_08 : MonoBehaviour
         return answer;
     }
 
-    //for give me git... today is open diablo4 
+    //Datetime and UTC and Tics
+    private void DateTimePractice()
+    {
+        // DateTime class를 보통 만드는것이었나?
+    }
 }
 
 public class Monster
