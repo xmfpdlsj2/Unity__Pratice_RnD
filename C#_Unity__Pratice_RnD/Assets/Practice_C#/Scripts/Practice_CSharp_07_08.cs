@@ -155,6 +155,14 @@ public class Practice_CSharp_07_08 : MonoBehaviour
     {
         // DateTime class를 보통 만드는것이었나?
     }
+
+    // 파이썬도 공부함.... 테스트오토메이터. ㅠㅠ 
+    private void Python()
+    {
+        // 기본 문법들, 함수는 def 라고 정의, 좀당황스러운게 탭으로 범위가 결정되는듯
+        // 함수 안에 함수는 대체?? 
+    }
+
 }
 
 public class Monster
