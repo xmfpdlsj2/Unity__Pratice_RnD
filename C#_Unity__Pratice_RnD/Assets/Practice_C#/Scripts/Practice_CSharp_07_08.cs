@@ -163,6 +163,12 @@ public class Practice_CSharp_07_08 : MonoBehaviour
         // 함수 안에 함수는 대체?? 
     }
 
+    // params
+    private void ParamsPractice()
+    {
+        // c++ 의 ... 같은 거인듯.  찾아보자.
+    }
+
 }
 
 public class Monster
