@@ -164,9 +164,10 @@ public class Practice_CSharp_07_08 : MonoBehaviour
     }
 
     // params
-    private void ParamsPractice()
+    private void ParamsPractice(object p)
     {
         // c++ 의 ... 같은 거인듯.  찾아보자.
+        // params 매개변수를 파람으로 받는것과 오브젝트의 관계
     }
 
 }
