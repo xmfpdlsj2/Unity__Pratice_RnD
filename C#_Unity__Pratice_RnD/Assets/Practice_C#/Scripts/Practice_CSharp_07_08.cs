@@ -170,6 +170,12 @@ public class Practice_CSharp_07_08 : MonoBehaviour
         // params 매개변수를 파람으로 받는것과 오브젝트의 관계
     }
 
+    //linq 관련해서도 자료구조처럼 많이 알아둘 필요가 있다.
+    private void LinqPractice()
+    {
+        // 링큐 추가부터 
+    }
+
 }
 
 public class Monster
