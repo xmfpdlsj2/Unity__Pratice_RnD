@@ -129,7 +129,8 @@ public class Practice_CSharp_07_08 : MonoBehaviour
         // 연수님은 커스텀으로도 트윈을 만들어사용하기도했다. 상속받아서 사용가능한듯 
     }
 
-    // is or and etc
+    // is or and etc 
+    // 추가로 from 은 기본인건가?
     private void IsOrAndETC()
     {
         string ascii = "ASCII";
@@ -174,7 +175,9 @@ public class Practice_CSharp_07_08 : MonoBehaviour
     private void LinqPractice()
     {
         // 링큐 추가부터 
+
     }
+
 
 }
 
