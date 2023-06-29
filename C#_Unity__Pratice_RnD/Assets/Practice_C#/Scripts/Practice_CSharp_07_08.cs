@@ -178,7 +178,16 @@ public class Practice_CSharp_07_08 : MonoBehaviour
 
     }
 
-
+    // 싱글톤으로 클래스를 static 객체로 만들때 해당 클래스의 멤버 변수를 전역으로 할당하는 곳에서 
+    // getter로 받는거랑 그냥 배정 연산자로 할당하는거랑 차이가 있나? 
+    public string key = GetStringByKey();
+    public string key2 => GetStringByKey();
+    private static string GetStringByKey()
+    {
+        // 회사에서 비슷한 이슈로 배정 연산자로 변수를 할당하는 과정에서 빌드 에러가 나서 해당 NULL 예외가 뜸... 
+        // 2번이 되는지는 한번 확인해보긴해야됨. 
+        return "Nice";
+    }
 }
 
 public class Monster
