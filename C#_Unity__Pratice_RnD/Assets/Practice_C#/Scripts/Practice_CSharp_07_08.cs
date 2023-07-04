@@ -165,6 +165,7 @@ public class Practice_CSharp_07_08 : MonoBehaviour
     }
 
     // params
+    // 오브젝트 타입으로 주고 받는거랑 파람 이라는 타입의 차이?? 
     private void ParamsPractice(object p)
     {
         // c++ 의 ... 같은 거인듯.  찾아보자.
