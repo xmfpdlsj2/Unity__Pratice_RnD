@@ -127,6 +127,8 @@ public class Practice_CSharp_07_08 : MonoBehaviour
         //DOTween.OnStart();
 
         // 연수님은 커스텀으로도 트윈을 만들어사용하기도했다. 상속받아서 사용가능한듯 
+        // DoJump 는 말 그대로 점프 하는 듯한게 아니었다. 직선으로 움직이는게 당연.. 용도가 대체? 
+        // 점프하는 듯하는걸 쓸려면 즉 곡선움직임은 DoPath를 사용해야한다. Gpt가 알려줌 ㄷㄷ. 
     }
 
     // is or and etc 
