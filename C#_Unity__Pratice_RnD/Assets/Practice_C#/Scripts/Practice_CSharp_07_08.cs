@@ -181,7 +181,7 @@ public class Practice_CSharp_07_08 : MonoBehaviour
     private void LinqPractice()
     {
         // 링큐 추가부터 
-
+        // linq .Where() -> 조건식을 람다식으로 넣을수 있고 조건에 따라 iEnumerator 컬렉션을 반환해주는 함수. 
     }
 
     // 싱글톤으로 클래스를 static 객체로 만들때 해당 클래스의 멤버 변수를 전역으로 할당하는 곳에서 
