@@ -196,6 +196,8 @@ public class Practice_CSharp_07_08 : MonoBehaviour
         // 후자는 getter처럼 무명함수로 호출하는 형태기때문에 타이밍 이슈가 없을것 같다.
         return "Nice";
     }
+
+    // C#9.0 패턴매칭 도 정리해보자
 }
 
 public class Monster
