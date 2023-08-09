@@ -198,6 +198,9 @@ public class Practice_CSharp_07_08 : MonoBehaviour
     }
 
     // C#9.0 패턴매칭 도 정리해보자
+
+    // 상속구조에서 where 
+    // 상속받을때 상속 매개변수, 제네릭 타입을 where 로 특정 할 수 있다. 
 }
 
 public class Monster
