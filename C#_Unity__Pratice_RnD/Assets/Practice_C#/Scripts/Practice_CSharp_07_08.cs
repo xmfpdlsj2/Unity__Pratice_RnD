@@ -201,6 +201,16 @@ public class Practice_CSharp_07_08 : MonoBehaviour
 
     // 상속구조에서 where 
     // 상속받을때 상속 매개변수, 제네릭 타입을 where 로 특정 할 수 있다. 
+
+    // 해쉬셋 및 자료구조 
+    // 일반적은로 std::unordered_set 과 같은것 같다.
+    private void STLpractice()
+    {
+        var hash = new HashSet<int>();
+        var isAdd = hash.Add(1);    // -> true
+        isAdd = hash.Add(1);        // -> false
+        // 해쉬셋에 들어가는 타입이 클래스고 기반클래스로 생성하고 파생클래스가 다르면 add로 들어갈때 서로 다르게 들어간다.
+    }
 }
 
 public class Monster
