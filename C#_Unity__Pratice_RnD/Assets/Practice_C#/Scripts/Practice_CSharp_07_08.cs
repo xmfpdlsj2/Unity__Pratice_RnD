@@ -6,6 +6,7 @@ using System.ComponentModel;
 using UnityEngine;
 using DG.Tweening;
 using System.Runtime.InteropServices;
+using System.Linq;
 
 public class Practice_CSharp_07_08 : MonoBehaviour
 {
@@ -177,13 +178,6 @@ public class Practice_CSharp_07_08 : MonoBehaviour
         // params 매개변수를 파람으로 받는것과 오브젝트의 관계
     }
 
-    //linq 관련해서도 자료구조처럼 많이 알아둘 필요가 있다.
-    private void LinqPractice()
-    {
-        // 링큐 추가부터 
-        // linq .Where() -> 조건식을 람다식으로 넣을수 있고 조건에 따라 iEnumerator 컬렉션을 반환해주는 함수. 
-    }
-
     // 싱글톤으로 클래스를 static 객체로 만들때 해당 클래스의 멤버 변수를 전역으로 할당하는 곳에서 
     // getter로 받는거랑 그냥 배정 연산자로 할당하는거랑 차이가 있나? 
     public string key = GetStringByKey();
@@ -210,6 +204,21 @@ public class Practice_CSharp_07_08 : MonoBehaviour
         var isAdd = hash.Add(1);    // -> true
         isAdd = hash.Add(1);        // -> false
         // 해쉬셋에 들어가는 타입이 클래스고 기반클래스로 생성하고 파생클래스가 다르면 add로 들어갈때 서로 다르게 들어간다.
+
+        // List<T>().ForEach() 함수
+        List<int> numList = new List<int>() { 1, 2, 3, 4 };
+        numList.ForEach(num => Debug.Log($"num[{num}]"));
+    }
+
+    //linq 관련해서도 자료구조처럼 많이 알아둘 필요가 있다.
+    private void LinqPractice()
+    {
+        // linq .Where() -> 조건식을 람다식으로 넣을수 있고 조건에 따라 iEnumerator 컬렉션을 반환해주는 함수. 
+
+        // 랜덤 뽑기
+        List<int> numList = new List<int>() { 1, 2, 3, 4 };
+        System.Random random = new System.Random(); // C# random
+        var takeTwo = numList.OrderBy(x => random.Next()).Take(2).ToArray();
     }
 }
 
