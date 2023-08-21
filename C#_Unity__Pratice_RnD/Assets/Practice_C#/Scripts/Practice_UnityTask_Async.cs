@@ -41,5 +41,7 @@ public class Practice_UnityTask_Async : MonoBehaviour
         await UniTask.Delay(1000);
         Debug.Log("6");
     }
+
+    // task 와 when all 함수 예제 추가하기 
 }
 

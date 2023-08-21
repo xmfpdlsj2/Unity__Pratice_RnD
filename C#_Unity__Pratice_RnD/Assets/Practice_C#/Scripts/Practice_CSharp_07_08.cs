@@ -7,6 +7,7 @@ using UnityEngine;
 using DG.Tweening;
 using System.Runtime.InteropServices;
 using System.Linq;
+using Cysharp.Threading.Tasks;
 
 public class Practice_CSharp_07_08 : MonoBehaviour
 {
@@ -135,7 +136,7 @@ public class Practice_CSharp_07_08 : MonoBehaviour
         // 두트윈의 연계를 고민해봐야한다. 
     }
 
-    // is or and etc 
+    // is or and etc and as 
     // 추가로 from 은 기본인건가?
     private void IsOrAndETC()
     {
@@ -143,6 +144,7 @@ public class Practice_CSharp_07_08 : MonoBehaviour
         var ret = (ascii == "ASCII" || ascii == "BSCII");
         ret = ascii is "ASCII" or "BSCII";
 
+        // as 연산자는 형변환이며 실패하면 null 반환. 안전하게 형변환하고자 하는 용도.
     }
 
     // &= 연산자
@@ -220,7 +222,7 @@ public class Practice_CSharp_07_08 : MonoBehaviour
         System.Random random = new System.Random(); // C# random
         var takeTwo = numList.OrderBy(x => random.Next()).Take(2).ToArray();
     }
-}
+    }
 
 public class Monster
 {
