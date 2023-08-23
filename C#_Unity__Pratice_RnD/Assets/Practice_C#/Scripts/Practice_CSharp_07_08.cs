@@ -222,7 +222,11 @@ public class Practice_CSharp_07_08 : MonoBehaviour
         System.Random random = new System.Random(); // C# random
         var takeTwo = numList.OrderBy(x => random.Next()).Take(2).ToArray();
     }
-    }
+
+    // 인터페이스를 상속받은 클래스에서 구현한 인터페이스함수를 자식 클래스에서 오버라이당하려면
+    // 부모클래스의 인터페이스 함수에 virtual 키워드를 붙여주고 자식에서 오버라이드 함수로 받는다.
+    // 다른 방법으로는 함수명 앞에 인터페이스명.함수명 으로 명시할수도 있다. 
+}
 
 public class Monster
 {
