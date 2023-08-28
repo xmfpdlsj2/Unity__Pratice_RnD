@@ -82,12 +82,13 @@ public class Practice_CSharp_07_08 : MonoBehaviour
 
 
     // 무시자 _=
+    // 단순히 값을 버리고자 할때만 사용. 
     private void DiscardOperator()
     {
         var person = ("John", "Smith");
         var (first, _) = person;
-
         Debug.Log(first);
+        _ = 1;
         //Debug.Log(_); // error why?
     }
 
