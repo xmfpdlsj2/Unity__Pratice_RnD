@@ -43,5 +43,7 @@ public class Practice_UnityTask_Async : MonoBehaviour
     }
 
     // task 와 when all 함수 예제 추가하기 
+
+    // 유니티 프로젝트에서 Editor 폴더 하위는 빌드에 포함되지 않는다.
 }
 
