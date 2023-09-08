@@ -45,5 +45,9 @@ public class Practice_UnityTask_Async : MonoBehaviour
     // task 와 when all 함수 예제 추가하기 
 
     // 유니티 프로젝트에서 Editor 폴더 하위는 빌드에 포함되지 않는다.
+    
+
+    // 코루틴과 유니테스크를 사용할때, 모노비헤이비어 쪽에서 관리되는 애들이며, 파괴가 잦은 애들은
+    // 굳이 캐슬토큰을 사용하느니 코루틴을 쓰는게 좋아보인다는 시니어의 의견. 
 }
 
