@@ -55,6 +55,8 @@ public class Practice_CSharp_07_08 : MonoBehaviour
         Debug.Log($"junt class: {dragon.id}");
         ChangeClass_ref(ref dragon);
         Debug.Log($"ref class: {dragon.id}");
+
+        // 추가적으로 구조체를 생성해서 함수내부에서 사용할때도 ref 타입으로 받아서 사용하더라. 
     }
     private void ChangeNumger(int num)
     {
