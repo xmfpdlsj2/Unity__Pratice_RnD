@@ -39,7 +39,7 @@ public class Practice_CSharp_07_08 : MonoBehaviour
         //list[0] ??= "";
     }
 
-    private void RefnOut()
+    private void RefnInOut()
     {
         int number = 0;
         ChangeNumger(number);
@@ -57,6 +57,8 @@ public class Practice_CSharp_07_08 : MonoBehaviour
         Debug.Log($"ref class: {dragon.id}");
 
         // 추가적으로 구조체를 생성해서 함수내부에서 사용할때도 ref 타입으로 받아서 사용하더라. 
+        // ref 는 참조로 주고 받을수있으며 in으로 매개변수로 받으면 C++의 const &와 같다. 
+        // out도 전달될떄는 참조형으로 전달된다. 명시적인 효과들을 누릴수 있는 부분.
     }
     private void ChangeNumger(int num)
     {
