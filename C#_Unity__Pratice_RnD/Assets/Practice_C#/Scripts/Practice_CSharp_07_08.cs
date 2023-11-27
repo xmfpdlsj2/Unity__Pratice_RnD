@@ -246,7 +246,7 @@ public class Practice_CSharp_07_08 : MonoBehaviour
 
     // 유니티 TextMeshProUGUI 와 TextMeshPro 객체의 차이점 상속관계가 있다. TMP_Text 객체가 최상위 부모이고, 이걸쓰면 기존 레거시애들 다 쓸수있음. 
 
-
+    // string.Format("{0:n0}", num) 와 같이 n0, d0 과 같은 숫자포맷등 다양한 스트링 포맷이 있다. 예제를 알고있는게 표현에 좋을듯
 }
 
 public class Monster
