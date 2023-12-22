@@ -119,7 +119,7 @@ public class Practice_CSharp_07_08 : MonoBehaviour
     private void Dootween()
     {
         var dgSequence = DOTween.Sequence();
-        
+
         //DOTween.Append();
         //DOTween.AppendCallback();
         //DOTween.AppendInterval();
@@ -159,7 +159,7 @@ public class Practice_CSharp_07_08 : MonoBehaviour
         int one = 1;
         string some = "A";
         answer &= one == 1;
-        answer &=  some != "B";
+        answer &= some != "B";
         // .... 보기 좋은것 외에 어떤 이유로 쓰는지 좀더 정의할 필요가 있겠다.
         return answer;
     }
@@ -251,6 +251,10 @@ public class Practice_CSharp_07_08 : MonoBehaviour
     // 0.## 은 소수점이 있으면 표현하고 2번째 까지 표현하겠다는 의미 #의 갯수만큼 표현된다.  
 
     // HACK: TODO 와 같이 사용되는 주석 스타일. 약간 편법, 매직넘버와 같은 일반적인지 않은 상황에 추가하는 주석
+
+    // 구조체의 장점, 패킷 에서 정보를 전달할 때 정보들이 크지 않다면 구조체로 만들어서 전달하는게 좋을수 있다.
+    // 클래스로 만들어서 전달한다면 heap에 생성되 가비지가 생기지만, 로컬함수 내부에서 구조체로 만들어서 전달하면
+    // stack에서 생기고 없어질 것이기 때문.
 }
 
 public class Monster
